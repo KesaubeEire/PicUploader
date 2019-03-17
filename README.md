@@ -1,6 +1,14 @@
-    
+# 严正声明
+
+因为各种原因我没有Fork,但是我非常感谢作者的博客和GitHub,为我指明了道路,Watch+Star一条龙服务.
+
+[原博客](https://www.xiebruce.top/17.html#4) [原GitHub](https://github.com/xiebruce/PicUploader)
+
+再次感谢作者,为了方便我就暂且保留了作者的Readme.
+
 PicUploader
 ===============
+
 ![PicUploader-logo.png](https://img.xiebruce.top/2018/09/19/781e669d020efbde43dc952eb802293b.png)
 
 PicUploader 是一个用php编写的帮助你快速上传你的图片到七牛云/腾讯云/网易云/百度云/阿里云/京东云/又拍云/sm.ms/Imgur/Ucloud/QingCloud并自动把地址拼接成markdown格式放到剪贴板的小工具，配置完成后，要获取一个可用于markdown的图片外链只需要：右击图片→点击`你的自定义菜单`→到markdown编辑器中粘贴！支持图片压缩，添加文字/图片水印！
@@ -296,3 +304,4 @@ server {
 [Imgur API](https://apidocs.imgur.com/#2078c7e0-c2b8-4bc8-a646-6e544b087d0f)  
 [google](http://www.google.com/ncr)  
 [百度](http://www.baidu.com)  
+
