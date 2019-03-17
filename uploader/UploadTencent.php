@@ -33,11 +33,11 @@ class UploadTencent extends Common {
 	    $className = array_pop($tmpArr);
 	    $ServerConfig = $config['storageTypes'][strtolower(substr($className,6))];
 	    
-        $this->region = $ServerConfig['region'];
-        $this->secretId = $ServerConfig['secretId'];
+        $this->region    = $ServerConfig['region'];
+        $this->secretId  = $ServerConfig['secretId'];
         $this->secretKey = $ServerConfig['secretKey'];
-        $this->bucket = $ServerConfig['bucket'];
-        $this->domain = $ServerConfig['domain'] ?? '';
+        $this->bucket    = $ServerConfig['bucket'];
+        // $this->domain    =  '';
 
         $this->argv = $argv;
         static::$config = $config;
@@ -68,7 +68,7 @@ class UploadTencent extends Common {
 		        $location = urldecode($retObj->get('Location'));
 		        $matches = [];
 		        preg_match('/\d{4}\/\d{2}\/\d{2}\/.+/',$location,$matches);
-		        $key = $matches[0] ?? '';
+		        // $key = $matches[0] ?? '';
 		        if(!$this->domain){
 			        $this->domain = 'http://'.$this->bucket.'.cos.'.$this->region.'.myqcloud.com';
 		        }
